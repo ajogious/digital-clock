@@ -23,11 +23,7 @@ function showTime() {
     ampm.textContent = 'PM';
   }
 
-  if (h > 6 && ampm.textContent === 'AM') {
-    document.body.style.backgroundImage = 'url("images/day-img.jpg")';
-  } else {
-    document.body.style.backgroundImage = 'url("images/night-img.jpg")';
-  }
+
 
   if (m < 10) {
     mins.textContent = '0' + m;
