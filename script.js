@@ -18,9 +18,8 @@ function showTime() {
     hour.textContent = 12;
   } else if (h < 10) {
     hour.textContent = '0' + h;
-  }
-  
-  else if (h > 12) {
+  } 
+  if (h > 12) {
     hour.textContent = h - 12;
     ampm.textContent = 'PM';
   }
