@@ -50,5 +50,3 @@ setInterval(() => {
     }
   }
 }, 1000);
-
-console.log(new Date().getHours() - 12);
