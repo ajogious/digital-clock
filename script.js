@@ -16,17 +16,13 @@ function showTime() {
 
   if (h === 0) {
     hour.textContent = 12;
-  } else if (h < 10) {
-    hour.textContent = '0' + h;
   } else if (h > 12) {
     hour.textContent = h - 12;
     ampm.textContent = 'PM';
   }
 
-  if (h > 6 && ampm.textContent === 'AM') {
-    document.body.style.backgroundImage = 'url("images/day-img.jpg")';
-  } else {
-    document.body.style.backgroundImage = 'url("images/night-img.jpg")';
+  if (h < 10) {
+    hour.textContent = '0' + h;
   }
 
   if (m < 10) {
